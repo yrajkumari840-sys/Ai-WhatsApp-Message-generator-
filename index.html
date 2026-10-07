@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindi AI Message Generator</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      color: #172033;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 17px;
+      opacity: .95;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: -25px auto 40px;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.10);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 16px 0 8px;
+    }
+
+    textarea, select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    textarea:focus, select:focus {
+      border-color: #6366f1;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: .9;
+    }
+
+    .result {
+      margin-top: 25px;
+      padding: 20px;
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+      border-radius: 15px;
+      display: none;
+    }
+
+    .result h2 {
+      margin-bottom: 12px;
+      color: #4f46e5;
+      font-size: 21px;
+    }
+
+    #output {
+      white-space: pre-wrap;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .copy-btn {
+      background: #111827;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🤖 Hindi AI Message Generator</h1>
+  <p>AI की मदद से शानदार हिंदी संदेश कुछ ही सेकंड में बनाएं</p>
+</header>
+
+<div class="container">
+  <div class="card">
+
+    <label>स
